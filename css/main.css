@@ -305,22 +305,25 @@ section.active {
   width: 50rem;
   height: 50rem;
   background: conic-gradient(
-    var(--main-color),
+    /* var(--main-color),
     var(--accent-color),
-    var(--main-color),
-    transparent
+    var(--main-color), */
+    transparent,
+    transparent,
+    transparent,
+    var(--main-color)
   );
   transform: rotate(0deg);
-  animation: rotate-border 8s linear infinite;
+  animation: rotate-border 10s linear infinite;
 }
 .home-img .img-box::after {
-  background: conic-gradient(
+  /* background: conic-gradient(
     transparent,
     var(--accent-color),
     var(--main-color),
     transparent
-  );
-  animation-delay: -4s;
+  ); */
+  animation-delay: -5s;
 }
 @keyframes rotate-border {
   100% {
